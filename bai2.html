@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr =  [ 'c', 's', 'c', '2', '6', '1' ]
+    let x = 0;
+    let y = arr.length - 1;
+    while (x < y) {
+        let b = arr[x];
+        arr[x] = arr[y];
+        arr[y] = b;
+        x++;
+        y--;
+    }
+    console.log(arr)
+    let i = arr.join('')
+    console.log(i)
+</script>
+</body>
+</html>
